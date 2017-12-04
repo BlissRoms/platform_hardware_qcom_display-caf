@@ -6,8 +6,8 @@ else
     TARGET_USES_SDM = false
 endif
 
-display-hals := libgralloc libcopybit libmemtrack libqservice libqdutils
-display-hals += hdmi_cec
+display-hals := libgralloc libcopybit liblight libmemtrack libqservice libqdutils
+display-hals += hdmi_cec include
 
 ifeq ($(TARGET_USES_SDM), true)
     sdm-libs := sdm/libs
